@@ -1,0 +1,9 @@
+def remove_chars(s1, s2):
+    return ''.join(char for char in s1 if char not in s2)
+
+# Input
+s1 = input().strip()
+s2 = input().strip()
+
+# Output
+print(remove_chars(s1, s2))
