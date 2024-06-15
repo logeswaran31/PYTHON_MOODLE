@@ -1,0 +1,15 @@
+n=int(input())
+a=[int(x) for x in input().split()]
+swap=0
+temp=0
+for i in range(0,n):
+    for j in range(0,i):
+        if i!=j:
+            if a[j]>a[j+1]:
+                temp=a[j]
+                a[j]=a[j+1]
+                a[j+1]=temp
+                swap+=1
+print("List is sorted in",swap+1,"swaps.")
+print("First Element:",min(a))
+print("Last Element:",max(a))
