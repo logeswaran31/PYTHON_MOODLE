@@ -1,0 +1,15 @@
+n=int(input())
+list=[0]*100
+temp=[]
+current=[]
+for i in range(0,n):
+    a=int(input())
+    temp.append(a)
+for i in temp:
+    list[i]=list[i]+1
+for i in temp:
+    if i not in current:
+        current.append(i)
+for i in current:
+    if list[i]!=0:
+        print(i,"occurs",list[i],"times")
