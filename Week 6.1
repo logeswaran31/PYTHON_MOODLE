@@ -1,0 +1,22 @@
+n = int(input())
+lst = []  
+for i in range(n):
+    s = int(input())
+    lst.append(s)
+res = 0
+for i in range(n):
+    temp = lst[:] 
+    temp.pop(i)
+    flag = 0
+    current = 0
+    for j in range(n - 2): 
+        if temp[j] < temp[j+1]:
+            flag =flag+ 1
+        elif temp[j] > temp[j + 1]:
+            current = current+1
+    if (flag == 0 and current > 1) or (current == 0 and flag > 1):
+        res = 1
+        print("True")
+        break  
+if res==0:
+    print("False")
