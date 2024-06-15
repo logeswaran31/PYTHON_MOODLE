@@ -1,0 +1,12 @@
+n=int(input())
+flag=0
+index=int(input())
+list=[]
+for i in range(1,n+1):
+    if n%i==0:
+        list.append(i)
+        flag+=1
+if flag<index:
+    print("0")
+else:
+    print(list[index-1])
