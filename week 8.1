@@ -1,0 +1,12 @@
+from collections import Counter
+num = int(input())
+vote= {}
+for _ in range(num):
+    c = input()
+    if c in vote:
+        vote[c] += 1
+    else:
+        vote[c] = 1
+max_votes = max(vote.values())
+candidates_with_max_votes = [c for c, votes in vote.items() if votes == max_votes]
+print(sorted(candidates_with_max_votes)[0])
