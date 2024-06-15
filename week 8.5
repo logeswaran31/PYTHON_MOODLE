@@ -1,0 +1,12 @@
+def dictionary(input_dict):
+    sum_dict= {key: sum(value) for key, value in input_dict.items()}
+    s= dict(sorted(sum_dict.items(), key=lambda item: item[1]))
+    return s
+x= int(input())
+test_dict = {}
+for i in range(x):
+    key, *values = input().split()
+    test_dict[key] = list(map(int, values))
+s= dictionary(test_dict)
+for key, value in s.items():
+    print(key, value)
