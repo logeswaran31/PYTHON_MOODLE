@@ -1,0 +1,24 @@
+def compare_strings(s1, s2):
+  
+    s1_lower = s1.lower()
+    s2_lower = s2.lower()
+    
+   
+    if s1_lower < s2_lower:
+        return -1
+    elif s1_lower > s2_lower:
+        return 1
+    else:
+        return 0
+
+
+T = int(input())
+
+
+for _ in range(T):
+ 
+    s1 = input().strip()
+    s2 = input().strip()
+    
+   
+    print(compare_strings(s1, s2))
