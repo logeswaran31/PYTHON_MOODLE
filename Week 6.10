@@ -1,0 +1,7 @@
+n = int(input())
+list1=[int(x) for x in input().split()]
+list2=[int (x) for x in input().split()]
+for i in range(0,n):
+    for j in range(0,n):
+       if list1[i]==list2[j]:
+           print(j,end=" ")
