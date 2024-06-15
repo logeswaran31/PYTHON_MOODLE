@@ -1,0 +1,21 @@
+m=int(input())
+n=int(input())
+list1=[]
+list2=[]
+for i in range(0,m+n):
+    a=int(input())
+    list1.append(a)
+for i in range(0,n+m):
+    a=int(input())
+    list2.append(a)
+res1=[]
+res2=[]
+for i in range(0,m):
+    res1.append(list1[i])
+for i in range(0,n):
+    res1.append(list2[i])
+for i in range(m,m+n):
+    res2.append(list1[i])
+for i in range(m,m+n):
+    res2.append(list2[i])
+print("[",res1,", ",res2,"]",sep="")
