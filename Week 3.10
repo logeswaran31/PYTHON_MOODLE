@@ -1,0 +1,10 @@
+a=int(input(""))
+b=int(input(""))
+c=int(input(""))
+d=a*a
+e=b*b
+f=c*c
+if(d==(e+f) or e==(f+d) or f==(d+e)):
+    print("yes")
+else:
+    print("no")
