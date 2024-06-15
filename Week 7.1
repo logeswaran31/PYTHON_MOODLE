@@ -1,0 +1,14 @@
+string=input()
+s=string.lower()
+str1=s.split(' ')
+str2=input()
+count=0
+flag=0
+for i in str1:
+    flag=0
+    for j in str2:
+        if j in i:
+            flag=flag+1
+    if flag==0:
+        count=count+1
+print(count)
