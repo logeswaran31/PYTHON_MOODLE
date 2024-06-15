@@ -1,0 +1,9 @@
+n = int(input())
+
+is_power_of_three = False
+if n > 0:
+    while n % 2 == 0:
+        n //= 2
+    is_power_of_three = n == 1
+
+print(is_power_of_three)
