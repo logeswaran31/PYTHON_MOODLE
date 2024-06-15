@@ -1,0 +1,17 @@
+import math
+
+try:
+    user_input = input()
+    
+    number = float(user_input)
+    
+    # Check if the number is non-negative
+    if number >= 0:
+        # Calculate the square root
+        square_root = math.sqrt(number)
+        print(f"The square root of {number} is {square_root:.2f}")
+    else:
+        print("Error: Cannot calculate the square root of a negative number.")
+except ValueError:
+    # Handle the case where the input cannot be converted to a float
+    print("Error: could not convert string to float")
