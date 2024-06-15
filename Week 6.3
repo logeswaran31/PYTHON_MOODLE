@@ -1,0 +1,14 @@
+temp=[0]*1000
+list=[]
+for i in range(0,10):
+    a=int(input())
+    list.append(a)
+ele=int(input())
+for i in list:
+    temp[i]=i
+temp[ele]=ele
+print("ITEM to be inserted:",ele,sep="")
+print("After insertion array is:")
+for i in temp:
+    if i!=0:
+        print(i)
